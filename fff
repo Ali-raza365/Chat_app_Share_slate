@@ -1,0 +1,42 @@
+
+const repo=()=>{
+  if(active==10){
+
+    var repoData=new FormData();
+    repoData.append("token",token)
+    repoData.append("activity","blog")
+    repoData.append("activityId",bid)
+    repoData.append("reportId",active)
+    dispatch(addReport_Action(repoData))
+  }else{
+    var repoData=new FormData();
+    repoData.append("token",token)
+    repoData.append("activity","blog")
+    repoData.append("activityId",bid)
+    repoData.append("reportId",active)
+    repoData.append("comment",Txt)
+    console.log(object)
+
+    dispatch(addReport_Action(repoData))
+
+  }
+
+  const renameKey = (object, key, newKey) => {
+    const clonedObj = clone(object);
+    const targetKey = clonedObj[key];
+    delete clonedObj[key];
+    clonedObj[newKey] = targetKey;
+    return clonedObj;
+  };
+  const clone = (obj) => Object.assign({}, obj);
+
+  let list = reportList.map((i) => {
+    let changekey = renameKey(i, "name", "label");
+    return {
+      ...changekey,
+      value: i.id,
+      color: "#686868",
+      size: 15,
+      labelStyle: { color: "#686868" },
+    };
+  });

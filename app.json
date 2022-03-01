@@ -1,0 +1,51 @@
+{
+	"expo": {
+		"name": "SHARE SLATE WITH CHAT",
+		"slug": "Share-Slate-with-chat",
+		"privacy": "public",
+		"platforms": ["ios", "android"],
+		"version": "1.0",
+		"orientation": "portrait",
+		"icon": "./assets/icon.png",
+		"splash": {
+			"image": "./assets/splash.png",
+			"resizeMode": "cover",
+			"backgroundColor": "#ffffff"
+		},
+		"updates": {
+			"fallbackToCacheTimeout": 0,
+			"enabled": true,
+			"checkAutomatically": "ON_ERROR_RECOVERY"
+		},
+		"assetBundlePatterns": ["**/*"],
+
+		"ios": {
+			"supportsTablet": true,
+			"bundleIdentifier": "com.ShareSlate.ShareSlate",
+			"buildNumber": "1.0.2",
+			"config": {
+				"googleMobileAdsAppId": "ca-app-pub-3686012001393355~4774468583"
+			},
+			"entitlements": {
+				"com.apple.developer.networking.wifi-info": "true"
+			}
+		},
+		"android": {
+			"package": "com.ShareSlate.ShareSlate",
+			"versionCode": 1.0,
+
+			"config": {
+				"googleMobileAdsAppId": "ca-app-pub-3686012001393355~2145257623"
+			}
+		}
+	},
+	"infoPlist": {
+		"NSLocationAlwaysUsageDescription": "Share Slate app needs access to Location for following reasons To detect which geographical region the user has created his account from: Share Slate sends the sms/text/ OTP code verification to every user in the event of account creation and password recovery.Without knowing the region, we can not determine the country code to send sms/text/OTP code messages.Share Slate has a reward feature where every user gets some revenue share for some of the activities performed on app. The revenue distribution can be done on the location basis. E.g. user in Asia can not be paid in USD.To show local blogs to users",
+		"NSLocationUsageDescription": "Share Slate app needs access to Location for following reasons To detect which geographical region the user has created his account from: Share Slate sends the sms/text/ OTP code verification to every user in the event of account creation and password recovery.Without knowing the region, we can not determine the country code to send sms/text/OTP code messages.Share Slate has a reward feature where every user gets some revenue share for some of the activities performed on app. The revenue distribution can be done on the location basis. E.g. user in Asia can not be paid in USD.To show local blogs to users",
+		"NSMicrophoneUsageDescription": "Share Slate needs to access to microphone for recording",
+		"NSLocationWhenInUseUsageDescription": "Share Slate app needs access to Location for following reasons To detect which geographical region the user has created his account from: Share Slate sends the sms/text/ OTP code verification to every user in the event of account creation and password recovery.Without knowing the region, we can not determine the country code to send sms/text/OTP code messages.Share Slate has a reward feature where every user gets some revenue share for some of the activities performed on app. The revenue distribution can be done on the location basis. E.g. user in Asia can not be paid in USD.To show local blogs to users",
+
+		"NSLocationAlwaysAndWhenInUseUsageDescription": "Share Slate app needs access to Location for following reasons To detect which geographical region the user has created his account from: Share Slate sends the sms/text/ OTP code verification to every user in the event of account creation and password recovery.Without knowing the region, we can not determine the country code to send sms/text/OTP code messages.Share Slate has a reward feature where every user gets some revenue share for some of the activities performed on app. The revenue distribution can be done on the location basis. E.g. user in Asia can not be paid in USD.To show local blogs to users",
+		"googleMapsApiKey": "AIzaSyC8HV-F5sKpS8RKtkzhYsdOjcDIkHv_rXE"
+	}
+}
